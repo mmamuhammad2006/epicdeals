@@ -18,6 +18,22 @@
 .bg-gray{
     background-color: var(--gray) !important;
 }
+.text-primary{
+    color: var(--primary) !important;
+}
+.text-secondary{
+    color: var(--secondary) !important;
+}
+.text-sky{
+    color: var(--sky) !important;
+}
+.text-gray{
+    color: var(--gray) !important;
+}
+
+.z-99{
+    z-index: 99 !important;
+}
 // height
 .h-250{
     height: 250px;
@@ -25,10 +41,36 @@
 .h-400{
     height: 400px;
 }
+.w-250{
+    width: 250px;
+}
 .fs-42{
     font-size: 42px;
+}
+.rounded-40{
+    border-radius: 40px !important;
+}
+.b-40{
+    bottom: 40px !important;
 }
 .hero-sec-img {
     background-image: url('../images/hero-image.jpg');
     background-size: cover;
 } 
+.nav-cart-count{
+    position: relative;
+    bottom: 10px !important;
+    right: 5px !important;
+    color: white;
+    background: var(--sky) !important;
+    padding: 3px !important;
+    border-radius: 50% !important;
+    height: 20px !important;
+    width: 20px !important;
+    text-align: center;
+    vertical-align: middle !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px !important;
+}

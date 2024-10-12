@@ -13,5 +13,7 @@ app.set('view engine','ejs')
 app.get('/',(req,res)=>{
     res.render('pages/home')
 })
-
+app.get('/cart',(req,res)=>{
+    res.render('pages/cart')
+})
 app.listen(5000) 
