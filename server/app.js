@@ -19,4 +19,7 @@ app.get('/cart',(req,res)=>{
 app.get('/details',(req,res)=>{
     res.render('pages/details')
 })
+app.get('/wishlist',(req,res)=>{
+    res.render('pages/wishlist')
+})
 app.listen(5000) 
