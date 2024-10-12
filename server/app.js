@@ -16,4 +16,7 @@ app.get('/',(req,res)=>{
 app.get('/cart',(req,res)=>{
     res.render('pages/cart')
 })
+app.get('/details',(req,res)=>{
+    res.render('pages/details')
+})
 app.listen(5000) 
