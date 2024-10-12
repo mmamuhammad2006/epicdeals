@@ -1,0 +1,34 @@
+:root {
+    --primary: #201E43;//40%
+    --secondary: #134B70;//30%
+    --sky: #508C9B;//15%
+    --gray: #EEEEEE;//15%
+
+}
+// creating custom classes
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+.bg-secondary{
+    background-color: var(--secondary) !important;
+}
+.bg-sky{
+    background-color: var(--sky) !important;
+}
+.bg-gray{
+    background-color: var(--gray) !important;
+}
+// height
+.h-250{
+    height: 250px;
+}
+.h-400{
+    height: 400px;
+}
+.fs-42{
+    font-size: 42px;
+}
+.hero-sec-img {
+    background-image: url('../images/hero-image.jpg');
+    background-size: cover;
+} 
