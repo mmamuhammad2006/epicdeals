@@ -1,0 +1,150 @@
+<template>
+  <section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight text-white">
+            The best offer <br />
+            <span class="text-sky">for your business</span>
+          </h1>
+          <p class="mb-4 opacity-70 text-gray">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Temporibus, expedita iusto veniam atque, magni tempora mollitia
+            dolorum consequatur nulla, neque debitis eos reprehenderit quasi ab
+            ipsum nisi dolorem modi. Quos?
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div
+            id="radius-shape-1"
+            class="position-absolute rounded-circle shadow-5-strong"
+          ></div>
+          <div
+            id="radius-shape-2"
+            class="position-absolute shadow-5-strong"
+          ></div>
+
+          <div class="card bg-gray">
+            <div class="card-body px-4 py-5 px-md-5">
+              <div class="head">
+                <div class="col-12">
+                  <h3 class="m-0 pb-4 text-sky fw-bold text-center">
+                    Register
+                  </h3>
+                </div>
+              </div>
+              <form @submit.prevent="register">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div data-mdb-input-init class="form-outline">
+                      <label class="form-label text-black" for="form3Example1"
+                        >First name</label
+                      >
+                      <input
+                        type="text"
+                        id="form3Example1"
+                        class="form-control"
+                        v-model="data.form.firstName"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div data-mdb-input-init class="form-outline">
+                      <label class="form-label text-black" for="form3Example2"
+                        >Last name</label
+                      >
+                      <input
+                        type="text"
+                        id="form3Example2"
+                        class="form-control"
+                        v-model="data.form.secondName"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <label class="form-label text-black" for="form3Example3"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="form3Example3"
+                    class="form-control"
+                    v-model="data.form.email"
+                    required
+                  />
+                </div>
+
+                <!-- Password input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <label class="form-label text-black" for="form3Example4"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    id="form3Example4"
+                    class="form-control"
+                    v-model="data.form.password"
+                    required
+                  />
+                </div>
+
+                <!-- Submit button -->
+                <div class="bttn">
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn bg-secondary text-white btn-block w-100 mb-4"
+                    >
+                      Sign up
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>Already have an account?: <a href="/login"> login</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import {expressRegister} from "../../services/authService.js";
+import axios from "axios";
+import { onMounted, ref } from "vue";
+
+const data = ref({
+  form: {
+    firstName: "",
+    secondName: "",
+    email: "",
+    password: "",
+  },
+});
+
+console.log("register vue");
+
+const register = async () => {
+  try {
+    const response = await expressRegister(data.value.form);
+    console.log("register try function gets:", response);
+  } catch (err) {
+    console.log("register catch function");
+  }
+};
+</script>
+
