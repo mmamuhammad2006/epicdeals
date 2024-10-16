@@ -20,4 +20,7 @@ app.set('view engine','ejs')
 const navRoute = require('./routes/navRoute');
 app.use(navRoute);
 
+const db = require('./controllers/dbConnection');
+app.set(db);
+
 app.listen(5000) 
