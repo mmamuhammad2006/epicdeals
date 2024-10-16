@@ -5,15 +5,15 @@ import login from './components/auth/login.vue'
 import home from './components/home.vue'
 import register from './components/auth/register.vue'
 
-const getData = () =>{
-  axios.get('http://localhost:5000/get-data')
-  .then(response => console.log(response))
-  .catch(error => console.error("axios error is: "+error));
-}
+// const getData = () =>{
+//   axios.get('http://localhost:5000/get-data')
+//   .then(response => console.log(response))
+//   .catch(error => console.error("axios error is: "+error));
+// }
 
-onMounted(()=>{
-  getData();
-})
+// onMounted(()=>{
+//   getData();
+// })
 </script>
 
 <template>

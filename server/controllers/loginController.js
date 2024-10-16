@@ -10,10 +10,10 @@ exports.login = asyncHandler( async(req,res,next) => {
             return;
         }
 
-        res.send("Email or password doesn't match");
+        res.status(500).send("Email or password doesn't match");
         next();
     }catch(err){
         console.log(err);
-        console.log('Getting error while logging user');
+        res.status(500).send('Getting error while logging user');
     }
 })

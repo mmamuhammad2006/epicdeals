@@ -34,10 +34,15 @@
                   </h3>
                 </div>
               </div>
+              <div  class="error pb-3">
+                <div class="col1">
+                  <h3 class="m-0 text-danger fs-5 fw-bold text-start">{{ data.error['data'] }}</h3>
+                </div>
+              </div>
               <form @submit.prevent="login">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <label class="form-label text-black" for="form3Example3"
+                  <label class="form-label text-black text-start w-100" for="form3Example3"
                     >Email address</label
                   >
                   <input
@@ -51,7 +56,7 @@
 
                 <!-- Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <label class="form-label text-black" for="form3Example4"
+                  <label class="form-label text-black text-start w-100" for="form3Example4"
                     >Password</label
                   >
                   <input
@@ -93,12 +98,14 @@
 <script setup>
 import { expressLogin } from "../../services/authService.js";
 import { ref } from "vue";
-
+import { useRouter  } from 'vue-router';
+const router = useRouter();
 const data = ref({
   form: {
     email: "",
     password: "",
   },
+  error: ''
 });
 
 console.log("login vue");
@@ -107,8 +114,11 @@ const login = async () => {
   try {
     const response = await expressLogin(data.value.form);
     console.log("login try function gets:", response);
+    data.value.error = ''
+    router.push({path: '/home'})
   } catch (err) {
-    console.log("login catch function",err);
+    data.value.error = err['response']
+    console.error("login catch function",data.value.error);
   }
 };
 </script>

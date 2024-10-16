@@ -34,6 +34,11 @@
                   </h3>
                 </div>
               </div>
+              <div class="error pb-4" v-if="data.err">
+                <div class="col-12">
+                  <h3 class="m-0 text-danger fw-bold fs-5">{{ data.err }}</h3>
+                </div>
+              </div>
               <form @submit.prevent="register">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
@@ -123,10 +128,11 @@
 </template>
 
 <script setup>
-import {expressRegister} from "../../services/authService.js";
+import { expressRegister } from "../../services/authService.js";
 import axios from "axios";
 import { onMounted, ref } from "vue";
-
+import { useRouter } from "vue-router";
+const router = useRouter();
 const data = ref({
   form: {
     firstName: "",
@@ -134,6 +140,7 @@ const data = ref({
     email: "",
     password: "",
   },
+  err: '',
 });
 
 console.log("register vue");
@@ -141,9 +148,12 @@ console.log("register vue");
 const register = async () => {
   try {
     const response = await expressRegister(data.value.form);
-    console.log("register try function gets:", response);
+    console.log("Vue register try function "+response);
+    data.value.err = '';
+    router.push({path: '/home'})
   } catch (err) {
-    console.log("register catch function");
+    data.value.err = 'Email already exists';
+    console.log("Vue register catch function"+err);
   }
 };
 </script>

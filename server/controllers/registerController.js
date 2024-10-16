@@ -10,10 +10,13 @@ exports.register = asyncHandler(async(req,res,next)=>{
             password: req.body.password || 'testPassword',
         }
         const newRecord = await db('users').insert(data)
-        console.log('New User Created successfully');
+        if(newRecord){
+            res.status(200).send("New User Created successfully");
+            return;
+        }
+        // next();
     }catch(err){
-        console.log(err);
-        console.log('Getting error during new user creation');
+        console.log("Getting error during new user creation");
+        res.status(500).send("Email already exists");
     }
-    console.log('This is a register controller function')
 })
