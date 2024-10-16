@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const registerController = require('../controllers/registerController');
+const loginController = require('../controllers/loginController');
 
 router.get('/',(req,res)=>{
     res.render('pages/home')
@@ -16,10 +17,6 @@ router.get('/wishlist',(req,res)=>{
 });
 
 router.post('/register',registerController.register);
-router.post('/login',(req,res)=>{
-    // if(req.body.)
-    console.log(req.body);
-    res.send("User logged in successfully")
-});
+router.post('/login',loginController.login);
 
 module.exports = router;
