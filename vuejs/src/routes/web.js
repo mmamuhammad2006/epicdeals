@@ -20,13 +20,13 @@ const customRoutes = [
         path: '/register', name: 'register', component: authPage('Register')
     },
     {
-        path: '/cart', name: 'add-to-cart', component: loadPage('Cart'), meta: { layout: 'App' }
+        path: '/cart/:cartDiv', name: 'add-to-cart', component: loadPage('Cart'), meta: { layout: 'App' }
     },
     {
-        path: '/wishlist', name: 'items-wishlist', component: loadPage('Wishlist'), meta: { layout: 'App' }
+        path: '/wishlist/:wishListDiv', name: 'items-wishlist', component: loadPage('Wishlist'), meta: { layout: 'App' }
     },
     {
-        path: '/details', name: 'item-details', component: loadPage('Details'), meta: { layout: 'App' }
+        path: '/details/:itemDetailstDiv', name: 'item-details', component: loadPage('Details'), meta: { layout: 'App' }
     },
     
 ]

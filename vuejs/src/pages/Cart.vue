@@ -1,55 +1,5 @@
 <template>
-    <div class="container-fluid py-5 bg-body-tertiary">
-        <div class="container py-5">
-            <div class="head pb-5">
-                <div class="col-12">
-                    <h3 class="m-0 fw-bold fs-42 text-center text-secondary">Cart Items</h3>
-                </div>
-            </div>
-            <div class="content">
-                <div class="col-12 d-flex">
-                    <!-- box -->
-                     <div class="box col-8 rounded-5 shadow bg-white p-5 d-flex align-items-center">
-                        <div class="col-12 d-flex">
-                            <div class="img">
-                                <div class="col-12 h-100">
-                                    <img class="h-100 w-250 object-fit-cover rounded-start-5" src="/public/images/slider1.jpg" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="content px-4 d-flex align-items-center">
-                                <div class="col-12">
-                                    <div class="head pb-3">
-                                        <div class="col-12">
-                                            <h3 class="m-0 fw-bold fs-5 text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti deserun</h3>
-                                        </div>
-                                    </div>
-                                    <div class="text pb-3">
-                                        <div class="col-12">
-                                            <ul>
-                                                <li>Price: <span class="fw-bold">$5</span></li>
-                                                <li>Tax: <span class="fw-bold">$2</span></li>
-                                                <li>Discount: <span class="fw-bold">10% off</span></li>
-                                                <li>Qty: <span class="fw-bold">11</span></li>
-                                                <li>Total: <span class="fw-bold">$55</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="bttn">
-                                        <div class="col-12">
-                                            <a href="#" class="btn bg-sky m-0 text-decoration-none text-white">Remove</a>
-                                            <a href="#" class="btn bg-sky m-0 text-decoration-none text-white">Edit</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                     <!-- checkout -->
-                      <h3 class="fw-bold ms-5">Checkout page to be displayed here</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+    <item-card></item-card>
 </template>
 
 <route lang="yaml">

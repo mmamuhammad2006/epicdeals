@@ -58,13 +58,13 @@
                                 </ul>
                               </li> -->
                               <li class="nav-item dropdown">
-                                <router-link :to="{ name: 'items-wishlist'}" class="nav-link d-flex">
+                                <router-link :to="{ name: 'items-wishlist' , params: {wishListDiv: true} }" class="nav-link d-flex">
                                     <i class="fa-solid fa-heart text-white fs-4"></i>
                                     <span class="nav-cart-count">{{ count || 5 }}</span>
                                 </router-link>
                               </li>
                               <li class="nav-item dropdown">
-                                <router-link :to="{ name: 'add-to-cart'}" class="nav-link d-flex">
+                                <router-link :to="{ name: 'add-to-cart', params: {cartDiv: true} }" class="nav-link d-flex">
                                     <i class="fa-solid fa-cart-shopping text-white fs-4"></i>
                                     <span class="nav-cart-count">{{ count || 5 }}</span>
                                 </router-link>
