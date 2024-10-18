@@ -84,7 +84,7 @@
 
                 <!-- login buttons -->
                 <div class="text-center">
-                  <p>Create an account?: <router-link to="/auth/register"> Register</router-link></p>
+                  <p>Create an account?: <router-link :to="{ name: 'register'}"> Register</router-link></p>
                 </div>
               </form>
             </div>
@@ -114,7 +114,7 @@ const login = async () => {
     const response = await expressLogin(data.value.form);
     console.log("login try function gets:", response);
     data.value.error = ''
-    router.push({path: '/home'})
+    router.push({name: 'home'})
   } catch (err) {
     data.value.error = err['response']
     console.error("login catch function",data.value.error);

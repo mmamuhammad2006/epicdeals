@@ -7,7 +7,7 @@
                         <div class="container-fluid">
                             <div class="col-2">
                                 <div class="col-12">
-                                    <router-link class="navbar-brand fs-3 fw-bold text-white" to="/home">Epicdeals</router-link>
+                                    <router-link class="navbar-brand fs-3 fw-bold text-white" :to="{ name: 'home' }">Epicdeals</router-link>
                                 </div>
                             </div>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,11 +39,11 @@
                             <ul class="navbar-nav d-flex justify-content-end mb-2 mb-lg-0 col-4">
                               <li class="nav-item">
                                 <!-- <a class="nav-link active text-white" aria-current="page" href="#">Sign in</a> -->
-                                 <router-link class="nav-link active text-white" to="/auth/login">Sin in</router-link>
+                                 <router-link class="nav-link active text-white" :to="{ name: 'login' }">Sin in</router-link>
                               </li>
                               <li class="nav-item">
                                 <!-- <a class="nav-link text-white" href="#">Register</a> -->
-                                <router-link class="nav-link active text-white" to="/auth/register">Register</router-link>
+                                <router-link class="nav-link active text-white" :to="{ name: 'register'}">Register</router-link>
 
                               </li>
                               <!-- <li class="nav-item dropdown">
@@ -58,13 +58,13 @@
                                 </ul>
                               </li> -->
                               <li class="nav-item dropdown">
-                                <router-link to="/wishlist" class="nav-link d-flex">
+                                <router-link :to="{ name: 'items-wishlist'}" class="nav-link d-flex">
                                     <i class="fa-solid fa-heart text-white fs-4"></i>
                                     <span class="nav-cart-count">{{ count || 5 }}</span>
                                 </router-link>
                               </li>
                               <li class="nav-item dropdown">
-                                <router-link to="/cart" class="nav-link d-flex">
+                                <router-link :to="{ name: 'add-to-cart'}" class="nav-link d-flex">
                                     <i class="fa-solid fa-cart-shopping text-white fs-4"></i>
                                     <span class="nav-cart-count">{{ count || 5 }}</span>
                                 </router-link>

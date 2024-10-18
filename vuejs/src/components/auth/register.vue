@@ -116,7 +116,7 @@
 
                 <!-- Register buttons -->
                 <div class="text-center">
-                  <p>Already have an account?: <router-link to="/auth/login"> login</router-link></p>
+                  <p>Already have an account?: <router-link :to="{ name: 'login'}"> login</router-link></p>
                 </div>
               </form>
             </div>
@@ -149,7 +149,7 @@ const register = async () => {
     const response = await expressRegister(data.value.form);
     console.log("Vue register try function "+response);
     data.value.err = '';
-    router.push({path: '/home'})
+    router.push({name: 'home'})
   } catch (err) {
     data.value.err = 'Email already exists';
     console.log("Vue register catch function"+err);
