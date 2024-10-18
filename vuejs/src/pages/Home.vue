@@ -1,23 +1,23 @@
 <template>
-    <main>
+    <div>
         <div id="carouselExampleFade" class="carousel slide slider-sec carousel-fade h-400">
             <div class="carousel-inner h-100">
               <div class="carousel-item h-100 active">
-                <img src="../public/images/slider1.jpg" class="d-block w-100 h-100" alt="/images/hero-image.jpg">
+                <img src="/public/images/slider1.jpg" class="d-block w-100 h-100" alt="/images/hero-image.jpg">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                   </div>
               </div>
               <div class="carousel-item h-100">
-                <img src="../public/images/slider2.jpg" class="d-block w-100 h-100" alt="/images/hero-image.jpg">
+                <img src="/public/images/slider2.jpg" class="d-block w-100 h-100" alt="/images/hero-image.jpg">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                   </div>
               </div>
               <div class="carousel-item h-100">
-                <img src="../public/images/slider3.jpg" class="d-block w-100 h-100" alt="/images/hero-image.jpg">
+                <img src="/public/images/slider3.jpg" class="d-block w-100 h-100" alt="/images/hero-image.jpg">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -50,7 +50,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -73,7 +73,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -96,7 +96,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -119,7 +119,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -142,7 +142,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -165,7 +165,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -188,7 +188,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -211,7 +211,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -234,7 +234,7 @@
                             <div class="col-lg-11 col-12">
                                 <div class="img">
                                     <div class="col-12">
-                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="../public/images/slider1.jpg" alt="" srcset="">
+                                        <img class="w-100 rounded-top-5 h-250 object-fit-cover" src="/public/images/slider1.jpg" alt="" srcset="">
                                     </div>
                                 </div>
                                 <div class="content bg-secondary p-4 rounded-40 position-relative b-40">
@@ -257,5 +257,10 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 </template>
+
+<route lang="yaml">
+meta:
+  layout: App
+</route>

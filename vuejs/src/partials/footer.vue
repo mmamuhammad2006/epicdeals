@@ -1,4 +1,5 @@
-<div class="container-fluid bg-sky">
+<template>
+  <div class="container-fluid bg-sky">
     <div class="container">
         <footer class="py-5">
           <div class="row">
@@ -42,14 +43,14 @@
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                   <label for="newsletter1" class="visually-hidden text-white">Email address</label>
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn bg-secondary text-white" type="button text-white">Subscribe</button>
+                  <button class="btn bg-secondary text-white" type="button">Subscribe</button>
                 </div>
               </form>
             </div>
           </div>
       
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p class="text-white">© 2024 Company, Inc. All rights reserved.</p>
+          <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+            <p class="text-white">&copy; 2024 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook-f text-white"></i></a></li>
               <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter text-white"></i></a></li>
@@ -59,3 +60,4 @@
         </footer>
     </div>
 </div>
+</template>

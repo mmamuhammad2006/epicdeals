@@ -116,7 +116,7 @@
 
                 <!-- Register buttons -->
                 <div class="text-center">
-                  <p>Already have an account?: <a href="/login"> login</a></p>
+                  <p>Already have an account?: <router-link to="/auth/login"> login</router-link></p>
                 </div>
               </form>
             </div>
@@ -129,10 +129,10 @@
 
 <script setup>
 import { expressRegister } from "../../services/authService.js";
-import axios from "axios";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
+
 const data = ref({
   form: {
     firstName: "",
@@ -143,7 +143,6 @@ const data = ref({
   err: '',
 });
 
-console.log("register vue");
 
 const register = async () => {
   try {

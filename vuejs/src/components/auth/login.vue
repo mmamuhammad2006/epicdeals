@@ -84,7 +84,7 @@
 
                 <!-- login buttons -->
                 <div class="text-center">
-                  <p>Create an account?: <a href="/register"> Register</a></p>
+                  <p>Create an account?: <router-link to="/auth/register"> Register</router-link></p>
                 </div>
               </form>
             </div>
@@ -108,7 +108,6 @@ const data = ref({
   error: ''
 });
 
-console.log("login vue");
 
 const login = async () => {
   try {
