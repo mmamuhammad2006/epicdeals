@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    console.log('window inner width is'+ window.innerWidth)
-    if(window.innerWidth > 991){
 
     $(window).scroll(function () { 
 
@@ -16,6 +14,4 @@ $(document).ready(function () {
         }
 
     });
-}
-
 });

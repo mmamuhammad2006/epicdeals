@@ -1,0 +1,123 @@
+<div class="main-sub-nav">
+    <div class="col-12 p-0">
+        <div class="container-fluid bg-primary main-navbar z-3">
+            <div class="container m-auto">
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid">
+                        <div class="col-2">
+                            <div class="col-12">
+                                <router-link class="navbar-brand fs-3 fw-bold text-white" :to="{ name: 'home' }">Epicdeals</router-link>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse col-10" id="navbarSupportedContent">
+                        <div class="col-8">
+                            <div class="col-12 d-flex justify-content-center">
+                                <form class="d-flex col-11 ms-auto" role="search">
+                                    <span>
+                                        <select class="form-select rounded-end-0 h-100 me-5" aria-label="Default select example">
+                                            <option class="w-250" value="1">All</option>
+                                            <option class="w-250" value="2">Eat-Out</option>
+                                            <option class="w-250" value="3">Spa</option>
+                                            <option class="w-250" value="2">Beauty</option>
+                                            <option class="w-250" value="3">Travel</option>
+                                            <option class="w-250" value="3">Activites</option>
+                                          </select>
+                                    </span>
+                                    <input class="form-control rounded-0 w-100" type="search" placeholder="Search" aria-label="Search">
+                                    <span class="bg-secondary p-2 px-3 rounded-end-3">
+                                        <a href="#">
+                                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                                        </a>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav d-flex justify-content-end mb-2 mb-lg-0 col-4">
+                          <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Sign in</a>
+                             <!-- <router-link class="nav-link active text-white" :to="{ name: 'login' }">Sin in</router-link> -->
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Register</a>
+                            <!-- <router-link class="nav-link active text-white" :to="{ name: 'register'}">Register</router-link> -->
+
+                          </li>
+                          <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li> -->
+                          <li class="nav-item dropdown">
+                            <router-link :to="{ name: 'items-wishlist'}" class="nav-link d-flex">
+                                <i class="fa-solid fa-heart text-white fs-4"></i>
+                                <span class="nav-cart-count">5</span>
+                            </router-link>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <router-link :to="{ name: 'add-to-cart'}" class="nav-link d-flex">
+                                <i class="fa-solid fa-cart-shopping text-white fs-4"></i>
+                                <span class="nav-cart-count">5</span>
+                            </router-link>
+                          </li>
+                        </ul>
+                       
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <!-- sub navbar -->
+        <div class="container-fluid bg-secondary sub-navbar">
+            <div class="container">
+                <div class="sub-navbar col-12">
+                    <div class="col-7 m-auto p-2 text-center d-flex justify-content-evenly">
+                        <div class="text">
+                            <div class="col-12">
+                                <a class="text-white text-decoration-none fw-bold" href="#">ALL</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-12">
+                                <a class="text-white text-decoration-none fw-bold" href="#">EAT-OUT</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-12">
+                                <a class="text-white text-decoration-none fw-bold" href="#">SPA</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-12">
+                                <a class="text-white text-decoration-none fw-bold" href="#">BEAUTY</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-12">
+                                <a class="text-white text-decoration-none fw-bold" href="#">TRAVEL</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-12">
+                                <a class="text-white text-decoration-none fw-bold" href="#">ACTIVITIES</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="col-12">
+                                <a class="text-white text-decoration-none fw-bold" href="#">SERVICES</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div> 

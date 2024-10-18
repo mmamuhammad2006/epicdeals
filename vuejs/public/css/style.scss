@@ -80,3 +80,10 @@
     align-items: center;
     font-size: 12px !important;
 }
+.navbar-toggler {
+    color: transparent !important;
+    border: transparent !important;
+}
+.navbar-toggler-icon {
+    background-image: url("../images/barsIcon.png") !important;
+}
